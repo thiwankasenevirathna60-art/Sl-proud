@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>සංස්කෘතියට ආදරේ කරන අපි</title>
+    <!-- Tailwind CSS for rich modern UI styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for beautiful icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts for premium appearance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans Sinhala', 'Poppins', sans-serif;
+            background-color: #f7f9fa;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- MAIN DASHBOARD VIEW -->
+    <div id="dashboardView" class="block pb-16">
+        <!-- Header / Cover Photo Section -->
+        <div class="relative w-full h-64 md:h-80 bg-gradient-to-r from-amber-800 to-amber-950 overflow-hidden shadow-md">
+            <!-- Cover Image -->
+            <img src="1783683795555.png" 
+                 alt="සංස්කෘතික පසුබිම් කවරය" 
+                 class="w-full h-full object-cover opacity-90"
+                 onerror="this.src='https://images.unsplash.com/photo-1588668214407-6ee976bc7c2b?auto=format&fit=crop&w=1200&q=80'"/>
+            
+            <!-- Bottom Left Profile Info -->
+            <div class="absolute -bottom-12 left-4 md:left-8 flex items-end space-x-4">
+                <div class="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-white bg-amber-950 shadow-lg overflow-hidden flex items-center justify-center">
+                    <!-- Logo Image -->
+                    <img src="cropped_circle_image.png" 
+                         alt="වෙබ් අඩවි ලාංඡනය" 
+                         class="w-full h-full object-cover bg-white"
+                         onerror="this.src='https://images.unsplash.com/photo-1566737236500-c8ac43014a67?auto=format&fit=crop&w=300&q=80'"/>
+                </div>
+                <div class="mb-14">
+                    <h1 class="text-white text-xl md:text-3xl font-bold drop-shadow-lg font-sans">
+                        සංස්කෘතියට ආදරේ කරන අපි
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Margin offset for the profile overlap -->
+        <div class="h-16"></div>
+
+        <!-- Main Content Area -->
+        <div class="max-w-4xl mx-auto px-4 mt-4">
+            <!-- Ayubowan Greeting -->
+            <div class="text-center my-6">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-amber-800 drop-shadow-sm flex items-center justify-center gap-2">
+                    🙏 ආයුබෝවන් 🙏
+                </h2>
+            </div>
+
+            <!-- Welcome Messages Box -->
+            <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-amber-100 mb-6">
+                <p class="text-lg md:text-xl text-center text-amber-950 font-semibold leading-relaxed mb-6">
+                    "සංස්කෘතියට ආදරේ කරන අපි" facebook පිටුවෙ පලකරපු post එක දැකලා ආව ඔයාව ආයුබෝවන් කියලා ආදරෙන් පිළිගන්නවා.
+                </p>
+                
+                <div class="h-[1px] bg-gradient-to-r from-transparent via-amber-200 to-transparent my-4"></div>
+
+                <p class="text-base md:text-lg text-gray-700 leading-relaxed text-justify">
+                    facebook පිටුවෙහි සදහන් කල පරිදි ඔබේ දක්ශතාවන් දැන් මුලු රටටම පෙන්නන්න අපි සූදානම්. ඔයා අපිට එවන මේ වීඩියෝ එක අපි අපේ facebook පිටුවෙහි පලකරනවා. ඒ විදිහට පලවෙන වීඩියෝ වලින් වැඩිම Likes ප්‍රමාණයක් ගන්න කෙනාගෙ වීඩියෝ එක ලෝකෙටම බලන්න අපේ සංස්කෘතියට ආදරේ කරන අපි youtube chanel එකේ ඔයාගෙ විස්තර එක්කම පලකරනවා. ඒවගේම ඔයාගෙ නර්ථන උපකාරක පංතියේ හෝ ඔයාගෙ නර්තන ඇදුම් භාන්ඩ ව්‍යාපාරයේ විස්තරද එම වීඩියෝව සමග අපගේ youtube නාලිකාව හරහා නොමිලේ පලකරනවා.
+                </p>
+            </div>
+
+            <!-- Instructions Checklist Section -->
+            <div class="bg-amber-50 rounded-2xl p-6 md:p-8 border border-amber-200 mb-8">
+                <h3 class="text-xl md:text-2xl font-bold text-amber-900 mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-circle-check"></i> ඔයා කරන්න ඕනෙ මෙන්න මෙච්චරයි
+                </h3>
+
+                <!-- Rules / Comparison Box (සැසඳිය යුතු කොටස) -->
+                <div class="bg-amber-100 border-l-4 border-amber-600 p-4 mb-6 rounded-r-lg text-amber-950 text-sm md:text-base">
+                    <span class="font-bold">⚠️ සැසඳිය යුතු:</span> facebook හා youtube හි ඇති නීති රීති හේතුවෙන් ඔබ upload කරන video එක facebook තුල සහ youtube තුල මීට පෙර පල නොකරපු පැහැදිලි video එකක් විය යුතුයි.
+                </div>
+
+                <!-- Steps List -->
+                <ol class="space-y-4 text-gray-800 text-base md:text-lg">
+                    <li class="flex items-start">
+                        <span class="flex items-center justify-center bg-amber-800 text-white font-bold rounded-full h-8 w-8 shrink-0 mr-3 text-sm">1</span>
+                        <p class="pt-0.5">පහත upload බොත්තම ඔබා ඔයාගෙ facebook එකේ තිබෙන නම සටහන් කර වීඩියෝව upload කරන්න.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="flex items-center justify-center bg-amber-800 text-white font-bold rounded-full h-8 w-8 shrink-0 mr-3 text-sm">2</span>
+                        <p class="pt-0.5">Upload වීමෙන් අනතුරුව ඔබට ඔබේ වීඩියෝවට අදාල facebook link එක ඔයාට ලැබෙයි.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="flex items-center justify-center bg-amber-800 text-white font-bold rounded-full h-8 w-8 shrink-0 mr-3 text-sm">3</span>
+                        <p class="pt-0.5">ඒ link එකෙන් ඔයාට පුලුවන් ඔයාගෙ video එක අපේ facebook page එකේ පලවලා තියෙනවා බලාගන්න.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="flex items-center justify-center bg-amber-800 text-white font-bold rounded-full h-8 w-8 shrink-0 mr-3 text-sm">4</span>
+                        <p class="pt-0.5">ඔයා ඒ post එක යාලුවන්ට group වලට share කරන්න ඔයාගෙ වීඩියෝ එකට like කරන්න කියලා.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="flex items-center justify-center bg-amber-800 text-white font-bold rounded-full h-8 w-8 shrink-0 mr-3 text-sm">5</span>
+                        <p class="pt-0.5">අගෝස්තු 12 වෙනිදා වන විට වැඩියෙන්ම likes ගන්න කෙනාගෙ video එක අපි අපේ youtube නාලිකාවේ පලකරනවා.</p>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- Upload Main Button -->
+            <div class="flex justify-center my-8">
+                <button onclick="showConsentPopup()" class="bg-amber-700 hover:bg-amber-800 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 flex items-center gap-3">
+                    <i class="fa-solid fa-cloud-arrow-up text-xl"></i> Upload Video
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONSENT MODAL / POP-UP -->
+    <div id="consentPopup" class="fixed inset-0 bg-black/60 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-lg w-full p-6 md:p-8 transform transition-all border-t-8 border-amber-700">
+            <div class="text-center text-amber-800 mb-4">
+                <i class="fa-solid fa-circle-exclamation text-5xl"></i>
+            </div>
+            <h4 class="text-xl font-bold text-gray-900 text-center mb-4 leading-normal">
+                අවධානය යොමු කරන්න!
+            </h4>
+            <p class="text-gray-700 text-center text-base md:text-lg leading-relaxed mb-6">
+                "facebook සහ youtube හි ඇති නීතිරීති හේතූවෙන් ඔබ upload කරන video එක facebook තුල සහ youtube තුල මීට පෙර පල නොකරපු වීඩියෝවක් බවට විශ්වාසද?"
+            </p>
+            <div class="flex gap-4 justify-center">
+                <button onclick="closeConsentPopup()" class="px-6 py-2.5 rounded-lg border border-gray-300 text-gray-600 font-semibold hover:bg-gray-100 transition duration-200">
+                    නැත
+                </button>
+                <button onclick="navigateToUploadPage()" class="px-8 py-2.5 rounded-lg bg-amber-700 text-white font-semibold hover:bg-amber-800 shadow-md hover:shadow-lg transition duration-200">
+                    ඔව්
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- VIDEO UPLOAD PAGE VIEW -->
+    <div id="uploadPageView" class="hidden max-w-2xl mx-auto px-4 py-8 w-full">
+        <!-- Back Navigation Header -->
+        <button onclick="goBackToDashboard()" class="text-amber-800 hover:text-amber-900 font-semibold flex items-center gap-2 mb-6">
+            <i class="fa-solid fa-arrow-left"></i> මුල් පිටුවට
+        </button>
+
+        <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-amber-100">
+            <h2 class="text-2xl font-bold text-center text-amber-900 mb-8 border-b pb-4">
+                Upload Your Video
+            </h2>
+
+            <form id="videoUploadForm" onsubmit="handleVideoUpload(event)" class="space-y-6">
+                <!-- Name input -->
+                <div>
+                    <label for="uploaderName" class="block text-gray-700 font-bold mb-2">ඔබගේ නම (නම ඇතුලත් කරන්න):</label>
+                    <input type="text" id="uploaderName" required 
+                           placeholder="උදා: නිමල් සිල්වා" 
+                           class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition duration-200">
+                </div>
+
+                <!-- Video Select button and display -->
+                <div>
+                    <label class="block text-gray-700 font-bold mb-2">වීඩියෝව තෝරන්න (Upload Video):</label>
+                    
+                    <!-- File input hidden for styling -->
+                    <input type="file" id="videoFileInput" accept="video/*" class="hidden" onchange="displaySelectedFileInfo()">
+                    
+                    <!-- Custom Styled Button for File Upload -->
+                    <div id="filePickerBox" onclick="triggerFileInput()" class="border-2 border-dashed border-amber-300 hover:border-amber-600 rounded-xl p-8 text-center cursor-pointer bg-amber-50/50 hover:bg-amber-50 transition duration-200">
+                        <i class="fa-solid fa-file-video text-4xl text-amber-700 mb-3"></i>
+                        <p class="text-amber-900 font-semibold">වීඩියෝ ගොනුවක් තෝරන්න</p>
+                        <p class="text-xs text-gray-500 mt-1">MP4, MOV, AVI (විශාලත්වය අනුව අප්ලෝඩ් වීමට කාලය ගතවේ)</p>
+                    </div>
+
+                    <!-- Selected file info preview -->
+                    <div id="selectedFileInfo" class="hidden mt-3 p-3 bg-amber-100 border border-amber-200 rounded-lg flex items-center justify-between">
+                        <div class="flex items-center space-x-2 truncate">
+                            <i class="fa-solid fa-circle-play text-amber-700"></i>
+                            <span id="fileNameSpan" class="text-sm font-semibold text-amber-950 truncate"></span>
+                        </div>
+                        <button type="button" onclick="clearSelectedFile()" class="text-red-500 hover:text-red-700 font-bold text-sm">
+                            <i class="fa-solid fa-trash-can"></i> ඉවත් කරන්න
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Detailed Error / Troubleshooting Message -->
+                <div id="formErrorMessage" class="hidden p-5 bg-red-50 border border-red-200 text-red-800 rounded-xl space-y-4">
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-exclamation text-2xl text-red-600 shrink-0 mt-0.5"></i>
+                        <div>
+                            <h5 class="font-bold text-red-950">Facebook සමඟ සම්බන්ධ වීමේ දෝෂයකි!</h5>
+                            <p id="errorTextContent" class="text-sm mt-1"></p>
+                        </div>
+                    </div>
+                    
+                    <!-- Troubleshooter guide -->
+                    <div class="bg-white/80 p-4 rounded-lg border border-red-150 text-xs text-gray-700 space-y-2 leading-relaxed">
+                        <p class="font-bold text-gray-900"><i class="fa-solid fa-gears text-amber-700 mr-1"></i> මෙය නිවැරදි කරගන්නේ කෙසේද?</p>
+                        <ol class="list-decimal pl-4 space-y-1">
+                            <li>ඔබගේ Token එකෙහි <strong>pages_manage_posts</strong> සහ <strong>publish_video</strong> යන අවසරයන් ඇති බවට සහතික වන්න.</li>
+                            <li>Facebook Graph Explorer හරහා <strong>Page Access Token</strong> එකක් ලබාගෙන ඇති බව තහවුරු කරගන්න (User Token එකක් සෘජුවම භාවිත කළ නොහැක).</li>
+                        </ol>
+                    </div>
+
+                    <!-- Simulator Emergency Access -->
+                    <div class="pt-2 border-t border-red-200 flex justify-end">
+                        <button type="button" onclick="simulateSuccessfulUpload()" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-4 py-2 rounded-lg transition flex items-center gap-2">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> සිමියුලේටර් ආකාරයෙන් පරීක්ෂා කරන්න (Simulate Success)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Next/Submit Button -->
+                <button type="submit" class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-4 rounded-xl shadow-md hover:shadow-lg transition duration-200 flex items-center justify-center gap-2">
+                    ඊළඟ පියවර (Next) <i class="fa-solid fa-circle-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- LOADING AND PROGRESS MODAL -->
+    <div id="loadingModal" class="fixed inset-0 bg-black/70 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl p-6 md:p-8 max-w-md w-full text-center shadow-2xl">
+            <!-- Spinner -->
+            <div class="inline-block animate-spin rounded-full h-14 w-14 border-4 border-amber-700 border-t-transparent mb-4"></div>
+            
+            <h4 class="text-lg font-bold text-gray-800 mb-2">
+                Uploading...
+            </h4>
+            <p class="text-amber-800 font-semibold mb-6">
+                වීඩියෝ එක සාර්ථකව upload වනතෙක් කරුණාකර රැඳී සිටින්න.
+            </p>
+
+            <!-- Custom Progress Bar -->
+            <div class="w-full bg-gray-200 rounded-full h-4 overflow-hidden mb-2">
+                <div id="uploadProgressBar" class="bg-amber-700 h-full rounded-full transition-all duration-300" style="width: 2%;"></div>
+            </div>
+            <!-- Progress Status text -->
+            <div id="progressStatusText" class="text-xs text-gray-500 font-bold">සූදානම් වෙමින් පවතී... 2%</div>
+        </div>
+    </div>
+
+    <!-- SUCCESS MESSAGE VIEW -->
+    <div id="successView" class="hidden max-w-2xl mx-auto px-4 py-12 text-center w-full">
+        <div class="bg-white rounded-2xl p-8 shadow-xl border border-emerald-100 max-w-lg mx-auto">
+            <div class="text-emerald-500 mb-4 text-6xl">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                ඔබගේ වීඩියෝව සාර්ථකව upload කරන ලදි.
+            </h3>
+            
+            <p class="text-gray-600 mb-6">
+                ඔබේ වීඩියෝව දැන් Facebook පිටුවට එක් කර ඇත. පහත ඇති සබැඳිය (Link) ක්ලික් කිරීමෙන් ඔබට වීඩියෝව නැරඹිය හැකිය.
+            </p>
+
+            <!-- Video Link Button -->
+            <a id="fbPostLinkBtn" href="#" target="_blank" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-6 rounded-xl shadow transition duration-200 mb-8">
+                <i class="fa-brands fa-facebook text-xl"></i> Facebook Post එකට පිවිසෙන්න
+            </a>
+
+            <div>
+                <button onclick="resetToHome()" class="text-amber-800 hover:text-amber-900 font-semibold flex items-center justify-center gap-2 mx-auto">
+                    <i class="fa-solid fa-house"></i> මුල් පිටුවට යන්න
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-amber-950 text-amber-200/60 py-6 text-center text-sm border-t border-amber-900/50">
+        <p>© 2026 සංස්කෘතියට ආදරේ කරන අපි. සියලුම හිමිකම් ඇවිරිණි.</p>
+    </footer>
+
+    <!-- INTERACTION LOGIC (JAVASCRIPT) -->
+    <script>
+        // FaceBook Page credentials provided in requirements
+        const FACEBOOK_PAGE_ID = "177639262908873";
+        const FACEBOOK_ACCESS_TOKEN = "EAAV4EaiOKvIBR43EIdZB5VZCDWrsmeJtQYj7Vr1mGmM6GeIzbkZB7kpsidOMPlJe7UqsrvHZBNbRK0YRFpFvLQzyVv1MFetlSMGcCGxtKc7ZCc37yXyQTAWocqm0VDFZBZAvdQXawjFSiakA0zCD3IxxrMf1ZCi1ZBJVqhMQ1GegCAHq8wMdlhhiqgTkdUSZBIGZC1Gsv0ZD";
+
+        // DOM elements references
+        const dashboardView = document.getElementById('dashboardView');
+        const consentPopup = document.getElementById('consentPopup');
+        const uploadPageView = document.getElementById('uploadPageView');
+        const loadingModal = document.getElementById('loadingModal');
+        const successView = document.getElementById('successView');
+        
+        const videoFileInput = document.getElementById('videoFileInput');
+        const filePickerBox = document.getElementById('filePickerBox');
+        const selectedFileInfo = document.getElementById('selectedFileInfo');
+        const fileNameSpan = document.getElementById('fileNameSpan');
+        const formErrorMessage = document.getElementById('formErrorMessage');
+        const errorTextContent = document.getElementById('errorTextContent');
+        
+        const uploadProgressBar = document.getElementById('uploadProgressBar');
+        const progressStatusText = document.getElementById('progressStatusText');
+        const fbPostLinkBtn = document.getElementById('fbPostLinkBtn');
+
+        // Show/Hide Consent Popup
+        function showConsentPopup() {
+            consentPopup.classList.remove('hidden');
+        }
+
+        function closeConsentPopup() {
+            consentPopup.classList.add('hidden');
+        }
+
+        // Navigate to actual uploading form
+        function navigateToUploadPage() {
+            closeConsentPopup();
+            dashboardView.classList.add('hidden');
+            successView.classList.add('hidden');
+            uploadPageView.classList.remove('hidden');
+            formErrorMessage.classList.add('hidden');
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Back to Home
+        function goBackToDashboard() {
+            uploadPageView.classList.add('hidden');
+            successView.classList.add('hidden');
+            dashboardView.classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Trigger input file selection
+        function triggerFileInput() {
+            videoFileInput.click();
+        }
+
+        // Display selected file details in box
+        function displaySelectedFileInfo() {
+            if (videoFileInput.files.length > 0) {
+                const file = videoFileInput.files[0];
+                fileNameSpan.textContent = file.name + ` (${(file.size / (1024 * 1024)).toFixed(2)} MB)`;
+                filePickerBox.classList.add('hidden');
+                selectedFileInfo.classList.remove('hidden');
+                formErrorMessage.classList.add('hidden');
+            }
+        }
+
+        // Clear file input
+        function clearSelectedFile() {
+            videoFileInput.value = '';
+            selectedFileInfo.classList.add('hidden');
+            filePickerBox.classList.remove('hidden');
+        }
+
+        /**
+         * Attempts to fetch the proper Page Access Token using the provided User Access Token.
+         * Falls back to the original token if not available or if the token is already a Page Access Token.
+         */
+        async function fetchPageAccessToken(userToken, pageId) {
+            try {
+                const response = await fetch(`https://graph.facebook.com/v18.0/me/accounts?access_token=${userToken}`);
+                if (!response.ok) {
+                    return userToken; // Fallback to provided token if API fails or is not a user token
+                }
+                const result = await response.json();
+                if (result && result.data) {
+                    const pageAccount = result.data.find(page => page.id === pageId);
+                    if (pageAccount && pageAccount.access_token) {
+                        console.log("Found correct Page Access Token automatically.");
+                        return pageAccount.access_token;
+                    }
+                }
+            } catch (err) {
+                console.error("Token exchange failed, using original token.", err);
+            }
+            return userToken;
+        }
+
+        // Main video upload function communicating with Facebook Graph API
+        async function handleVideoUpload(event) {
+            event.preventDefault();
+            
+            const uploaderName = document.getElementById('uploaderName').value.trim();
+            const videoFile = videoFileInput.files[0];
+
+            if (!uploaderName) {
+                showFormError("කරුණාකර ඔබගේ නම ඇතුලත් කරන්න.");
+                return;
+            }
+
+            if (!videoFile) {
+                showFormError("කරුණාකර වීඩියෝ ගොනුවක් තෝරන්න.");
+                return;
+            }
+
+            formErrorMessage.classList.add('hidden');
+            
+            // Show custom loading animation & progress
+            showLoadingModal();
+
+            // Setup Video Title / Description message
+            const postDescription = `නම: ${uploaderName}\n\nසංස්කෘතියට ආදරේ කරන අපි වෙබ් අඩවිය හරහා උඩුගත කරන ලද වීඩියෝවකි.`;
+
+            try {
+                // Initialize custom progress bar tracking
+                let progress = 5;
+                const progressInterval = setInterval(() => {
+                    if (progress < 85) {
+                        progress += Math.floor(Math.random() * 6) + 3;
+                        updateProgressBar(progress, "වීඩියෝව Facebook වෙත යොමු කරමින් පවතී...");
+                    }
+                }, 1000);
+
+                // Try to resolve the Page Access Token if they passed a User token
+                const targetToken = await fetchPageAccessToken(FACEBOOK_ACCESS_TOKEN, FACEBOOK_PAGE_ID);
+
+                // Use FormData to compile API parameters
+                const formData = new FormData();
+                formData.append('access_token', targetToken);
+                formData.append('description', postDescription);
+                formData.append('source', videoFile);
+
+                // Send request to Facebook Graph API for page video post
+                const response = await fetch(`https://graph.facebook.com/v18.0/${FACEBOOK_PAGE_ID}/videos`, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                clearInterval(progressInterval);
+                const result = await response.json();
+
+                if (response.ok && result.id) {
+                    updateProgressBar(100, "සාර්ථකව උඩුගත කර අවසන් කරන ලදි!");
+                    
+                    // Generate Facebook post link based on returned Video ID
+                    const facebookPostUrl = `https://www.facebook.com/${FACEBOOK_PAGE_ID}/videos/${result.id}/`;
+                    
+                    setTimeout(() => {
+                        hideLoadingModal();
+                        showSuccessScreen(facebookPostUrl);
+                    }, 1000);
+                } else {
+                    console.error("Facebook API Error:", result);
+                    const errMsg = result.error?.message || "නොදන්නා දෝෂයකි";
+                    throw new Error(errMsg);
+                }
+
+            } catch (error) {
+                console.error("Upload error details:", error);
+                hideLoadingModal();
+                showFormError(`අප්ලෝඩ් කිරීම අසාර්ථක විය! Facebook වෙතින් ලැබුණු දෝෂය: "${error.message}"`);
+            }
+        }
+
+        // Form error handling
+        function showFormError(message) {
+            errorTextContent.textContent = message;
+            formErrorMessage.classList.remove('hidden');
+            formErrorMessage.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Loading animation controls
+        function showLoadingModal() {
+            loadingModal.classList.remove('hidden');
+            updateProgressBar(2, "සූදානම් වෙමින් පවතී...");
+        }
+
+        function hideLoadingModal() {
+            loadingModal.classList.add('hidden');
+        }
+
+        function updateProgressBar(percentage, statusText) {
+            uploadProgressBar.style.width = `${percentage}%`;
+            progressStatusText.textContent = `${statusText} (${percentage}%)`;
+        }
+
+        // Switch to success page screen
+        function showSuccessScreen(linkUrl) {
+            uploadPageView.classList.add('hidden');
+            successView.classList.remove('hidden');
+            fbPostLinkBtn.href = linkUrl;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Simulation for testing of success screen during configuration errors
+        function simulateSuccessfulUpload() {
+            const uploaderName = document.getElementById('uploaderName').value.trim() || "පරීක්ෂණ පරිශීලකයා";
+            showLoadingModal();
+            
+            let simProgress = 10;
+            const simInterval = setInterval(() => {
+                simProgress += 15;
+                if (simProgress >= 100) {
+                    clearInterval(simInterval);
+                    updateProgressBar(100, "සාර්ථකව උඩුගත කර අවසන් කරන ලදි! (පරීක්ෂණ සිමියුලේෂන්)");
+                    setTimeout(() => {
+                        hideLoadingModal();
+                        // Mock Facebook Page Post Link
+                        showSuccessScreen(`https://www.facebook.com/${FACEBOOK_PAGE_ID}/posts/`);
+                    }, 800);
+                } else {
+                    updateProgressBar(simProgress, "සිමියුලේටර් ආකාරයෙන් වීඩියෝව අප්ලෝඩ් වෙමින් පවතී...");
+                }
+            }, 300);
+        }
+
+        // Reset App back to homepage for another upload
+        function resetToHome() {
+            // Clear fields
+            document.getElementById('uploaderName').value = '';
+            clearSelectedFile();
+            
+            // Redirect
+            successView.classList.add('hidden');
+            dashboardView.classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
